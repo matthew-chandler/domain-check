@@ -1,5 +1,3 @@
-import { API_KEY } from './config.js';
-
 const domainInput = document.getElementById('domainInput');
 const checkButton = document.getElementById('checkButton');
 const resultsContainer = document.getElementById('results');
@@ -18,7 +16,8 @@ async function checkDomainAvailability() {
     checkButton.disabled = true; // Disable button during API request
     try {
         const domainString = domains.join(",");
-        const response = await fetch(`https://domainr.p.rapidapi.com/v2/status?mashape-key=${API_KEY}&domain=${domainString}`);
+        const response = await fetch(`https://api.matthewachandler.com/domains?domain=${domainString}`);
+        // await fetch(`https://api.matthewachandler.com/domains?mashape-key=${API_KEY}&domain=${domainString}`);
         if (!response.ok) {
             throw new Error('Failed to fetch domain availability.');
         }

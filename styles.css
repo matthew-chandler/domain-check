@@ -66,3 +66,7 @@ button:hover {
 .unavailable {
     color: red;
 }
+
+.invalid {
+    color: rgb(176, 28, 114);
+}

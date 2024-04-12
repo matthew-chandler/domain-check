@@ -70,3 +70,7 @@ button:hover {
 .invalid {
     color: rgb(176, 28, 114);
 }
+
+.alternatives {
+    color: green;
+}

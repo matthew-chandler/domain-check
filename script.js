@@ -39,7 +39,7 @@ async function checkDomainAvailability() {
 
     checkButton.disabled = true; // Disable button during API request
     try {
-        const response = await fetch(`https://api.matthewachandler.com/domains?domain=${domainString}`);
+        const response = await fetch(`https://api.machandler.com/domains?domain=${domainString}`);
         if (!response.ok) {
             throw new Error('Failed to fetch domain availability.');
         }

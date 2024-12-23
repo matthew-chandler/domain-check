@@ -74,3 +74,8 @@ button:hover {
 .alternatives {
     color: green;
 }
+
+#footer-container {
+    text-align:center;
+    justify-content: center;
+}
